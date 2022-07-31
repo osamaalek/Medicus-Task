@@ -1,0 +1,2 @@
+rootProject.name = "Medicus Task"
+include ':app'

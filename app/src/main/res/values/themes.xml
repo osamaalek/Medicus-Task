@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MedicusTask" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:navigationBarColor">@color/color_system_ui</item>
+        <item name="android:statusBarColor">@color/color_system_ui</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="p">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/MyCustomActivityAnimation</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+    </style>
+
+    <style name="MyCustomActivityAnimation"
+        parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">
+            @anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">
+            @anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">
+            @anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">
+            @anim/slide_out_right</item>
+    </style>
+
+
+    <style name="HeadingBase">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Heading.TextAppearance.Large" parent="HeadingBase">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="Heading.TextAppearance.Large.Bold" parent="Heading.TextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Heading.TextAppearance.Medium" parent="HeadingBase">
+        <item name="android:textSize">28sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Heading.TextAppearance.Small" parent="HeadingBase">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="Heading.TextAppearance.XSmall" parent="HeadingBase">
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+
+    <style name="LabelBase">
+
+    </style>
+
+    <style name="Label.TextAppearance.Large" parent="LabelBase">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Label.TextAppearance.Large500" parent="Label.TextAppearance.Large">
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="Label.TextAppearance.Large.semi_bold" parent="Label.TextAppearance.Large500">
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Label.TextAppearance.Medium" parent="LabelBase">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Label.TextAppearance.Medium500" parent="Label.TextAppearance.Medium">
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+
+    </style>
+
+    <style name="Label.TextAppearance.Medium.SemiBold" parent="Label.TextAppearance.Medium">
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+
+    </style>
+
+    <style name="Label.TextAppearance.Small.SemiBold" parent="Label.TextAppearance.Small">
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+
+    </style>
+
+    <style name="Label.TextAppearance.Small" parent="LabelBase">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Label.TextAppearance.XSmall" parent="LabelBase">
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>
