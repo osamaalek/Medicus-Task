@@ -133,29 +133,32 @@
                 android:id="@+id/info_card"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:paddingTop="16dp"
+                app:cardElevation="2dp"
                 app:contentPadding="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/info">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Label.TextAppearance.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    style="@style/Label.TextAppearance.Small"
                     android:text="@{biomarker.info}" />
             </com.google.android.material.card.MaterialCardView>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/insights"
+                style="@style/Heading.TextAppearance.XSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="24dp"
                 android:text="@string/insights"
-                style="@style/Heading.TextAppearance.XSmall"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/info_card"
@@ -165,9 +168,12 @@
                 android:id="@+id/insights_card"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:paddingTop="16dp"
+                app:cardElevation="2dp"
                 app:contentPadding="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -175,11 +181,11 @@
                 app:layout_constraintTop_toBottomOf="@id/insights">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Label.TextAppearance.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    style="@style/Label.TextAppearance.Small"
                     android:text="@{biomarker.insight}" />
             </com.google.android.material.card.MaterialCardView>
 
